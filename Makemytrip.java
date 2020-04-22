@@ -17,7 +17,7 @@ public class Makemytrip {
 		
 		//One way
 		String click1=driver.findElementByXPath("//*[@id=\"root\"]/div/div[2]/div/div/div[1]/ul/li[1]").getAttribute("class");
-        System.out.println("Is 'Oneway' selected?" + click1);
+                System.out.println("Is 'Oneway' selected?" + click1);
         
 		//From City
 		driver.findElementById("fromCity").click();
@@ -27,12 +27,12 @@ public class Makemytrip {
 		a.sendKeys(Keys.ARROW_DOWN);
 		a.sendKeys(Keys.ARROW_DOWN);
 		a.sendKeys(Keys.ENTER);
-	    System.out.println("From City:" +driver.findElementById("fromCity").getAttribute("value"));
+	        System.out.println("From City:" +driver.findElementById("fromCity").getAttribute("value"));
 		
 		//To City
 		WebElement b=driver.findElementByXPath("//*[@id=\"root\"]/div/div[2]/div/div/div[2]/div[1]/div[2]/div[1]/div/div/div/input");
-	    b.sendKeys("che");
-	    Thread.sleep(2000);
+	        b.sendKeys("che");
+	        Thread.sleep(2000);
 		b.sendKeys(Keys.ARROW_DOWN);
 		b.sendKeys(Keys.ENTER);
 		System.out.println("To City:" +driver.findElementById("toCity").getAttribute("value"));
